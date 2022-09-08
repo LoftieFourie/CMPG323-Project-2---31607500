@@ -1,12 +1,13 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using ProjectAPI.Models;
 
 // Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
 // If you have enabled NRTs for your project, then un-comment the following line:
 // #nullable disable
 
-namespace ProjectAPI.Models
+namespace ProjectAPI
 {
     public partial class ConnectedOfficeContext : DbContext
     {
@@ -28,7 +29,7 @@ namespace ProjectAPI.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=ConnectedOffice");
+                optionsBuilder.UseSqlServer("Server=projectserver323sql.database.windows.net;Database=ConnectedOffice;User Id=serviceadmin; Password=64566546Lf;");
             }
         }
 
